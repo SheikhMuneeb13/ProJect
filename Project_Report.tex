@@ -1,0 +1,77 @@
+\documentclass{article}
+\begin{document}
+\title{\textsc{SPEECH COMMAND MODEL}}
+\author{\em Muneeb Ahmad Sheikh}
+\date{\today}
+\maketitle
+\begin{itemize}
+
+
+\item{\textbf{Language Used:}}\\
+
+PYTHON\\
+
+\item{\textbf{Libraries and Packages Used:}}\\
+
+KAPRE, SCIKIT LEARN, SOUND FILE, TENSORFLOW.\\
+
+\item{\textbf{OVERVIEW:}}\\
+
+Speech Command Recognition is changing voices in to text form,Speech command recognition is present in a wide range of devices and utilized by many HCI interfaces. In many situations, it is desirable to obtain lightweight and high accuracy models that can run locally.\\
+Some speech recognition systems require "training" (also called "enrollment") where an individual speaker reads text or isolated vocabulary into the system. The system analyzes the person's specific voice and uses it to fine-tune the recognition of that person's speech, resulting in increased accuracy. Systems that do not use training are called "speaker independent"[1] systems. Systems that use training are called "speaker dependent".\\
+Speech recognition applications include voice user interfaces such as voice dialing (e.g. "call home"), call routing (e.g. "I would like to make a collect call"), domotic appliance control, search key words (e.g. find a podcast where particular words were spoken), simple data entry (e.g., entering a credit card number), preparation of structured documents (e.g. a radiology report), determining speaker characteristics,[2] speech-to-text processing (e.g., word processors or emails), and aircraft (usually termed direct voice input).\\
+
+\newpage
+\item{\textbf{DATA:}}\\
+$
+
+1: Set 16KHz as sampling rate.\\
+
+2: Record 80 utterances of each command.\\
+
+3: Save samples of each command in different folders.\\
+\begin{enumerate}
+
+\item[--]Dataset/forward.\\
+
+\item[--]Dataset/back.\\
+
+\item[--]Dataset/left.\\
+
+\item[--]Dataset/right.\\
+
+\item[--]Dataset/stop.\\
+\end{enumerate}
+$\\
+
+
+\item{\textbf{RUN:}}\\
+$
+
+The Code is written using Google Colab:\\
+
+1: Open ColabNotebook.ipynb and change Runtime to GPU.\\
+
+2: Upload Speech-Recognition-Project/Data to Colab.\\
+
+3: Change data-dir in all cells to point to Speech-Recognition-Project/Data.\\
+
+4: Run the cells in the same order in Notebook Test.\\
+$\\
+
+\item{\textbf{TEST:}}\\
+$
+
+1: Locate the folder where you save your model.h5 file.\\
+
+2: Start speaking when you see mike in the bottom right pane of the task bar or see red blinking dot in the title bar.\\
+$\\
+
+\item{\textbf{MODEL SUMMARY:}}\\
+
+ADD IMAGE.**
+
+\item{The model is accomplished with an maximum accuracy of 99.8\%}\\
+
+\end{itemize}
+\end{document}
